@@ -5,11 +5,13 @@
   "scripts": {
     "ng": "ng",
     "nx": "nx",
+    "commit": "git-cz",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
+    "lint": "nx workspace-lint && ng lint",
+    "lint:styles": "stylelint \"apps/**/*.scss\" && stylelint \"libs/**/*.scss\"",
     "affected:apps": "nx affected:apps",
     "affected:libs": "nx affected:libs",
     "affected:build": "nx affected:build",
@@ -28,16 +30,57 @@
     "help": "nx help"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@angular/animations": "^8.2.0",
+    "@angular/common": "^8.2.0",
+    "@angular/compiler": "^8.2.0",
+    "@angular/core": "^8.2.0",
+    "@angular/forms": "^8.2.0",
+    "@angular/platform-browser": "^8.2.0",
+    "@angular/platform-browser-dynamic": "^8.2.0",
+    "@angular/router": "^8.2.0",
+    "core-js": "^2.5.4",
+    "rxjs": "~6.4.0",
+    "tslib": "^1.10.0",
+    "zone.js": "^0.9.1"
+  },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^0.803.3",
+    "@angular-devkit/build-ng-packagr": "~0.803.3",
     "@angular/cli": "8.3.3",
+    "@angular/compiler-cli": "^8.2.0",
+    "@angular/language-service": "^8.2.0",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@nrwl/angular": "^8.6.0",
+    "@nrwl/cypress": "8.6.0",
+    "@nrwl/jest": "8.6.0",
     "@nrwl/workspace": "8.6.0",
+    "@types/jest": "24.0.9",
     "@types/node": "~8.9.4",
+    "codelyzer": "~5.0.1",
+    "cypress": "3.4.1",
+    "cz-conventional-changelog": "^3.0.2",
     "dotenv": "6.2.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
     "eslint": "6.1.0",
-    "typescript": "~3.4.5",
-    "prettier": "1.18.2"
+    "husky": "^3.0.8",
+    "jest": "24.1.0",
+    "jest-preset-angular": "^7.1.1",
+    "lint-staged": "^9.4.1",
+    "ng-packagr": "^5.4.0",
+    "prettier": "1.18.2",
+    "stylelint": "^11.0.0",
+    "stylelint-config-recommended-scss": "^4.0.0",
+    "stylelint-scss": "^3.11.1",
+    "ts-jest": "24.0.0",
+    "ts-node": "~7.0.0",
+    "tsickle": "^0.37.0",
+    "tslint": "~5.11.0",
+    "typescript": "~3.4.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
