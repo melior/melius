@@ -5,6 +5,7 @@
     "devkit",
     "melius",
     "nrwl",
-    "stylelint"
+    "stylelint",
+    "swiper"
   ]
 }

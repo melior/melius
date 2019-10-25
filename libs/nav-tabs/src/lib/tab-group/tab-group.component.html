@@ -1,0 +1,15 @@
+<div class="melius-nav-tabs-wrapper">
+  <div class="melius-tab-label-group">
+    <ng-container *ngFor="let label of tabLabels; let i = index">
+      <div class="melius-tab-label-group__label" (click)="onTabLabelClicked(i)">
+        {{ label }}
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="melius-tab-group" #tabGroupElement>
+    <div class="melius-tab-group__tab-content-wrapper">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

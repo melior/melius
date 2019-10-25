@@ -1,0 +1,20 @@
+.melius-nav-tabs-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.melius-tab-group {
+  overflow: hidden;
+  flex: 1;
+}
+
+.melius-tab-group__tab-content-wrapper {
+  display: flex;
+  transition-property: transform;
+}
+
+.melius-tab-label-group {
+  display: flex;
+  flex-direction: row;
+}
