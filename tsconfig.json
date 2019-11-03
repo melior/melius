@@ -17,7 +17,11 @@
     "baseUrl": ".",
     "paths": {
       "@melius/nav-tabs": ["libs/nav-tabs/src/index.ts"],
-      "@melius/sidenav": ["libs/sidenav/src/index.ts"]
+      "@melius/sidenav": ["libs/sidenav/src/index.ts"],
+      "@melius/demo/sidenav": ["libs/demo/sidenav/src/index.ts"],
+      "@melius/docs/sidenav": ["libs/docs/sidenav/src/index.ts"],
+      "@melius/docs/nav-tabs": ["libs/docs/nav-tabs/src/index.ts"],
+      "@melius/docs/home": ["libs/docs/home/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

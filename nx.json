@@ -8,16 +8,22 @@
     "nx.json": "*"
   },
   "projects": {
-    "demo-nav-tabs-e2e": {
-      "tags": []
-    },
-    "demo-nav-tabs": {
-      "tags": []
-    },
     "nav-tabs": {
       "tags": []
     },
     "sidenav": {
+      "tags": []
+    },
+    "docs": {
+      "tags": []
+    },
+    "docs-sidenav": {
+      "tags": []
+    },
+    "docs-nav-tabs": {
+      "tags": []
+    },
+    "docs-home": {
       "tags": []
     }
   }

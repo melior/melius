@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+@import '~@angular/material/theming';
+@import '../../../libs/mat-sidenav/src/mat-sidenav-theme.scss';
+
+@include mat-core();
+
+$app-primary: mat-palette($mat-indigo);
+$app-accent: mat-palette($mat-pink, A200, A100, A400);
+$app-warn: mat-palette($mat-red);
+
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+@include angular-material-theme($app-theme);
+@include melius-sidenav-theme($app-theme);
