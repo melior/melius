@@ -28,6 +28,7 @@ const scale = (
   styleUrls: ['./sidenav.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: sidenavAnimations,
+  exportAs: 'meliusSidenav',
 })
 export class MeliusSidenavComponent implements OnInit, OnDestroy {
   @Input()
@@ -83,6 +84,10 @@ export class MeliusSidenavComponent implements OnInit, OnDestroy {
 
   public ngOnDestroy(): void {
     this.removeTouchMoveEventListener();
+  }
+
+  public open(): void {
+    this.setState(SidenavState.Open);
   }
 
   public onBackdropClicked(): void {

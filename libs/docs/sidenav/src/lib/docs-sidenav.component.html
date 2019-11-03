@@ -1,7 +1,11 @@
-<melius-sidenav>
+<melius-sidenav #sidenav="meliusSidenav">
   <div style="width: 150px">
     Sidenav
   </div>
 </melius-sidenav>
 
 Sidenav
+
+<button mat-raised-button color="accent" (click)="sidenav.open()">
+  Open Sidenav
+</button>
