@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@melius/nav-tabs": ["libs/nav-tabs/src/index.ts"]
+      "@melius/nav-tabs": ["libs/nav-tabs/src/index.ts"],
+      "@melius/sidenav": ["libs/sidenav/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

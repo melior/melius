@@ -16,6 +16,9 @@
     },
     "nav-tabs": {
       "tags": []
+    },
+    "sidenav": {
+      "tags": []
     }
   }
 }

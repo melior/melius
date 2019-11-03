@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+
+@mixin melius-sidenav-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  $sidenav-background-color: mat-color($background, dialog);
+  $sidenav-color: mat-color($foreground, text);
+  $sidenav-border-color: mat-color($foreground, divider);
+  $sidenav-border: solid 1px $sidenav-border-color;
+
+  .melius-sidenav {
+    background-color: $sidenav-background-color;
+    color: $sidenav-color;
+    border-right: $sidenav-border;
+
+    @include _mat-theme-elevation(16, $theme);
+  }
+
+  $backdrop-background-color: mat-color($background, card);
+
+  .melius-sidenav__backdrop {
+    @if (type-of($backdrop-background-color) == color) {
+      background-color: invert($backdrop-background-color);
+    } @else {
+      background-color: $backdrop-background-color;
+    }
+  }
+}

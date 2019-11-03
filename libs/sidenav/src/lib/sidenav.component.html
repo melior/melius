@@ -1,0 +1,17 @@
+<div class="melius-sidenav" #sidenavElement [@sidenavTrigger]="state">
+  <div
+    class="melius-sidenav__handle"
+    [style.left.px]="width"
+    [style.width.px]="handleWidth"
+  ></div>
+
+  <ng-content></ng-content>
+</div>
+
+<div
+  class="melius-sidenav__backdrop"
+  #sidenavBackdropElement
+  *ngIf="hasBackdrop"
+  [@sidenavBackdropTrigger]="state"
+  (click)="onBackdropClicked()"
+></div>

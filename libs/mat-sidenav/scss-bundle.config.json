@@ -1,0 +1,8 @@
+{
+  "bundlerOptions": {
+    "entryFile": "./libs/mat-sidenav/src/mat-sidenav-theme.scss",
+    "outFile": "./dist/libs/mat-sidenav/mat-sidenav-theme.theme.scss",
+    "rootDir": ".",
+    "logLevel": "debug"
+  }
+}

@@ -161,6 +161,44 @@
           "styleext": "scss"
         }
       }
+    },
+    "sidenav": {
+      "projectType": "library",
+      "root": "libs/sidenav",
+      "sourceRoot": "libs/sidenav/src",
+      "prefix": "melius",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/sidenav/tsconfig.lib.json",
+            "project": "libs/sidenav/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/sidenav/tsconfig.lib.json",
+              "libs/sidenav/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/sidenav/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/sidenav/jest.config.js",
+            "tsConfig": "libs/sidenav/tsconfig.spec.json",
+            "setupFile": "libs/sidenav/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

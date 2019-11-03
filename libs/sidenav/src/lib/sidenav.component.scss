@@ -1,0 +1,22 @@
+.melius-sidenav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1010;
+}
+
+.melius-sidenav__handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1020;
+}
+
+.melius-sidenav__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
